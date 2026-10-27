@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#8d174b">
+  <title>Shri Saari Collection | Sarees for Every Occasion</title>
+  <meta name="description" content="Explore beautiful sarees at Shri Saari Collection. Order easily through WhatsApp.">
+  <style>
+    :root{--wine:#8d174b;--pink:#f8dbe8;--gold:#e9b84c;--ink:#2d1822;--cream:#fffaf5;--green:#16834a}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.5}
+    a{color:inherit}
+    .topline{background:var(--wine);color:white;text-align:center;padding:8px 14px;font-size:13px}
+    header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #36102012}
+    .nav{max-width:1120px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{font-weight:800;color:var(--wine);font-size:21px;text-decoration:none}
+    .navlinks{display:flex;gap:18px;align-items:center;font-size:14px}
+    .navlinks a{text-decoration:none}
+    .hero{background:linear-gradient(120deg,#8d174b,#c43b76 56%,#ef9d79);color:white;padding:58px 20px}
+    .hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+    .eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:bold;color:#ffe5a1}
+    h1{font-size:clamp(36px,5vw,58px);line-height:1.08;margin:12px 0}
+    .hero p{max-width:520px;color:#fff1f6}
+    .btn{display:inline-block;border:0;border-radius:999px;padding:12px 18px;font-weight:bold;text-decoration:none;cursor:pointer;font-size:14px}
+    .btn-gold{background:var(--gold);color:#3b1a2a}
+    .btn-white{background:white;color:var(--wine)}
+    .hero-art{min-height:260px;border:1px solid #ffffff70;border-radius:28px;background:linear-gradient(135deg,#f9c4dc,#f5d982 45%,#5b247f);display:flex;align-items:center;justify-content:center;padding:20px;box-shadow:0 18px 45px #3d092c55}
+    .saree-emoji{font-size:100px;filter:drop-shadow(0 10px 8px #42132b55)}
+    .hero-note{font-size:12px;color:#fff5}
+    section{max-width:1120px;margin:auto;padding:42px 20px}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:20px}
+    h2{font-size:28px;margin:0;color:var(--wine)}
+    .muted{color:#806a75;font-size:14px}
+    .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+    .filter{border:1px solid #e8cbd8;background:white;border-radius:99px;padding:8px 14px;cursor:pointer}
+    .filter.active{background:var(--wine);color:white;border-color:var(--wine)}
+    .products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .card{background:white;border:1px solid #f0dfe6;border-radius:18px;overflow:hidden;box-shadow:0 5px 18px #541a2a08}
+    .product-art{height:190px;display:flex;align-items:center;justify-content:center;font-size:68px;background:linear-gradient(135deg,#f8dbe8,#f8c86d)}
+    .product-art.p2{background:linear-gradient(135deg,#d6c0f6,#f7d6de)}
+    .product-art.p3{background:linear-gradient(135deg,#c1eadc,#f8e0a8)}
+    .product-art.p4{background:linear-gradient(135deg,#f5b7b0,#e5d4ff)}
+    .product-art.p5{background:linear-gradient(135deg,#f7d8a1,#f1a5c4)}
+    .product-art.p6{background:linear-gradient(135deg,#b4d9f0,#dfc2f0)}
+    .card-body{padding:16px}
+    .tag{display:inline-block;background:#fff0f6;color:var(--wine);border-radius:99px;padding:4px 9px;font-size:11px;font-weight:bold}
+    .card h3{margin:10px 0 4px;font-size:17px}
+    .price{font-weight:800;font-size:18px;color:var(--wine)}
+    .card-actions{display:flex;gap:8px;margin-top:13px}
+    .card-actions .btn{flex:1;text-align:center;padding:10px 8px;font-size:12px}
+    .btn-outline{background:white;border:1px solid var(--wine);color:var(--wine)}
+    .banner{max-width:none;background:#fff0f6}
+    .banner-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;padding:36px 20px}
+    .steps{display:grid;gap:12px}
+    .step{display:flex;gap:12px;align-items:flex-start;background:white;padding:14px;border-radius:14px}
+    .stepnum{width:30px;height:30px;flex:0 0 30px;display:grid;place-items:center;background:var(--pink);color:var(--wine);font-weight:bold;border-radius:50%}
+    .contact{background:#351321;color:white}
+    .contact-inner{max-width:1120px;margin:auto;padding:34px 20px;display:flex;justify-content:space-between;gap:24px;align-items:center}
+    .contact h2{color:white}
+    footer{text-align:center;padding:18px;background:#260d19;color:#ead9e1;font-size:12px}
+    .cartbar{position:fixed;bottom:14px;right:14px;z-index:20;background:var(--wine);color:white;border-radius:99px;padding:12px 18px;box-shadow:0 6px 25px #20000f40;font-weight:bold;cursor:pointer;border:0}
+    .notice{font-size:12px;color:#806a75;margin-top:12px}
+    .modal-backdrop{display:none;position:fixed;inset:0;background:#180811a8;z-index:30;padding:16px;align-items:center;justify-content:center}
+    .modal{background:white;border-radius:20px;max-width:520px;width:100%;padding:22px;max-height:90vh;overflow:auto}
+    .modal-head{display:flex;justify-content:space-between;align-items:center}
+    .close{border:0;background:#f8e8ef;border-radius:50%;width:34px;height:34px;font-size:20px;cursor:pointer}
+    .cartline{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid #f1e3e9}
+    label{display:block;font-weight:bold;font-size:13px;margin:12px 0 5px}
+    input,textarea{width:100%;padding:11px;border:1px solid #dfc7d2;border-radius:10px;font:inherit}
+    .wide{width:100%;margin-top:10px;text-align:center}
+    @media(max-width:760px){.hero-inner,.banner-inner{grid-template-columns:1fr}.hero{padding:42px 20px}.hero-art{min-height:160px}.saree-emoji{font-size:70px}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.navlinks{gap:10px}.navlinks a:not(.shoplink){display:none}.contact-inner{align-items:flex-start;flex-direction:column}}
+    @media(max-width:430px){.products{grid-template-columns:1fr}.product-art{height:170px}.brand{font-size:18px}.section-head{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="topline">Beautiful sarees for every occasion • Easy WhatsApp ordering</div>
+  <header>
+    <nav class="nav">
+      <a class="brand" href="#">🌸 Shri Saari Collection</a>
+      <div class="navlinks"><a href="#collection">Collection</a><a href="#ordering">How to order</a><a class="shoplink" href="#contact">Contact</a></div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="max-width:none">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Tradition • Colour • Elegance</div>
+          <h1>Find the saree that feels like <span style="color:#ffe08a">you.</span></h1>
+          <p>Explore colourful sarees for festivals, weddings, celebrations and everyday elegance at Shri Saari Collection.</p>
+          <a class="btn btn-gold" href="#collection">Explore collection ↓</a>
+          <p class="hero-note">Product pictures shown below are placeholders. Replace them with your own saree photos before launch.</p>
+        </div>
+        <div class="hero-art" aria-label="Decorative saree illustration"><div class="saree-emoji">🥻✨</div></div>
+      </div>
+    </section>
+
+    <section id="collection">
+      <div class="section-head"><div><h2>Our Collection</h2><div class="muted">Choose a design and add it to your bag.</div></div><div class="muted" id="productCount">6 styles</div></div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="All">All sarees</button>
+        <button class="filter" data-filter="Silk">Silk</button>
+        <button class="filter" data-filter="Banarasi">Banarasi</button>
+        <button class="filter" data-filter="Cotton">Cotton</button>
+        <button class="filter" data-filter="Festive">Festive</button>
+      </div>
+      <div class="products" id="products"></div>
+      <p class="notice">Demo catalog: sample names and prices are for layout preview only. Update them to match your actual stock.</p>
+    </section>
+
+    <div class="banner" id="ordering">
+      <div class="banner-inner">
+        <div><div class="eyebrow" style="color:#a42d62">Simple shopping</div><h2>How to order</h2><p class="muted">Pick your favourite design, add it to your bag and send your order details on WhatsApp. You can also use your UPI payment app after configuring your payment details.</p></div>
+        <div class="steps">
+          <div class="step"><div class="stepnum">1</div><div><strong>Choose a saree</strong><div class="muted">Browse the collection and select quantity.</div></div></div>
+          <div class="step"><div class="stepnum">2</div><div><strong>Send order on WhatsApp</strong><div class="muted">Share your name, delivery address and order.</div></div></div>
+          <div class="step"><div class="stepnum">3</div><div><strong>Pay securely</strong><div class="muted">Confirm availability and final total with the shop before paying.</div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="payment">
+      <div class="section-head"><div><h2>Pay by UPI</h2><div class="muted">Use your own verified merchant UPI ID here.</div></div></div>
+      <p>After you configure your UPI ID in the code, customers can open their UPI app with the order amount filled in. The customer must confirm payment in their UPI app. This demo does not verify payments automatically.</p>
+      <p class="notice">For cards, net banking, automatic payment confirmation or refunds, use a payment gateway account and follow its official integration instructions. Never collect or store customers' UPI PINs.</p>
+    </section>
+  </main>
+
+  <div class="contact" id="contact">
+    <div class="contact-inner">
+      <div><h2>Shri Saari Collection</h2><p style="color:#e8ccd9;margin-bottom:0">Your next favourite saree may be here.</p><p style="color:#e8ccd9;font-size:13px">Add your shop address and opening hours in index.html.</p></div>
+      <a class="btn btn-gold" id="contactWhatsApp" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </div>
+  <footer>© <span id="year"></span> Shri Saari Collection • Made with care</footer>
+  <button class="cartbar" id="openCart">🛍 Bag (<span id="cartCount">0</span>)</button>
+
+  <div class="modal-backdrop" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+    <div class="modal">
+      <div class="modal-head"><h2 id="cartTitle">Your bag</h2><button class="close" id="closeCart" aria-label="Close">×</button></div>
+      <div id="cartItems"></div>
+      <div style="display:flex;justify-content:space-between;margin-top:16px;font-size:18px;font-weight:bold"><span>Sample total</span><span id="cartTotal">₹0</span></div>
+      <p class="notice">Shipping and final stock/price will be confirmed by the shop.</p>
+      <label for="customerName">Your name</label><input id="customerName" placeholder="Enter your name">
+      <label for="customerAddress">Delivery address</label><textarea id="customerAddress" rows="2" placeholder="Enter your full delivery address"></textarea>
+      <button class="btn btn-gold wide" id="sendWhatsApp">Send order on WhatsApp</button>
+      <button class="btn btn-outline wide" id="payUpi">Continue to UPI payment</button>
+      <p class="notice">UPI is a payment request shortcut, not proof that payment has been received. Confirm payment in your merchant account before shipping.</p>
+    </div>
+  </div>
+
+  <script>
+    // EDIT THESE SETTINGS BEFORE PUBLISHING:
+    const SHOP_WHATSAPP = "919876543210"; // Replace with shop WhatsApp number, country code included, no + or spaces.
+    const SHOP_UPI_ID = "yourshop@upi";   // Replace with your verified merchant UPI ID.
+    const SHOP_UPI_NAME = "Shri Saari Collection";
+
+    const products = [
+      {id:1,name:"Royal Silk Saree",category:"Silk",price:2499,art:"🥻",tone:""},
+      {id:2,name:"Banarasi Celebration",category:"Banarasi",price:3299,art:"🌺",tone:"p2"},
+      {id:3,name:"Everyday Cotton",category:"Cotton",price:899,art:"🌿",tone:"p3"},
+      {id:4,name:"Festive Floral Saree",category:"Festive",price:1599,art:"🌸",tone:"p4"},
+      {id:5,name:"Wedding Special",category:"Silk",price:3999,art:"✨",tone:"p5"},
+      {id:6,name:"Pastel Party Wear",category:"Festive",price:1899,art:"💐",tone:"p6"}
+    ];
+    const cart = {};
+    const money = n => new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR",maximumFractionDigits:0}).format(n);
+    const productsEl = document.getElementById("products");
+    function renderProducts(filter="All"){
+      const shown = products.filter(p=>filter==="All"||p.category===filter);
+      document.getElementById("productCount").textContent = `${shown.length} styles`;
+      productsEl.innerHTML = shown.map(p=>`
+        <article class="card">
+          <div class="product-art ${p.tone}" role="img" aria-label="Placeholder image for ${p.name}">${p.art}</div>
+          <div class="card-body"><span class="tag">${p.category}</span><h3>${p.name}</h3>
+          <div class="price">${money(p.price)}</div>
+          <div class="card-actions"><button class="btn btn-outline" onclick="addToCart(${p.id})">Add to bag</button><button class="btn btn-gold" onclick="quickOrder(${p.id})">Order</button></div></div>
+        </article>`).join("");
+    }
+    document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
+      document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));
+      btn.classList.add("active");renderProducts(btn.dataset.filter);
+    }));
+    function addToCart(id){cart[id]=(cart[id]||0)+1;updateCart();document.getElementById("openCart").animate([{transform:"scale(1)"},{transform:"scale(1.08)"},{transform:"scale(1)"}],{duration:220});}
+    function quickOrder(id){addToCart(id);openCart();}
+    function updateCart(){
+      const count=Object.values(cart).reduce((a,b)=>a+b,0);
+      document.getElementById("cartCount").textContent=count;
+      const items=products.filter(p=>cart[p.id]);
+      document.getElementById("cartItems").innerHTML=items.length?items.map(p=>`
+        <div class="cartline"><div><strong>${p.name}</strong><div class="muted">${money(p.price)} each</div></div>
+        <div><button class="filter" onclick="changeQty(${p.id},-1)" aria-label="Remove one">−</button> ${cart[p.id]} <button class="filter" onclick="changeQty(${p.id},1)" aria-label="Add one">+</button></div></div>`).join(""):'<p class="muted">Your bag is empty. Add a saree to get started.</p>';
+      document.getElementById("cartTotal").textContent=money(items.reduce((sum,p)=>sum+p.price*cart[p.id],0));
+    }
+    function changeQty(id,delta){cart[id]=(cart[id]||0)+delta;if(cart[id]<=0)delete cart[id];updateCart();}
+    function openCart(){document.getElementById("cartModal").style.display="flex";}
+    function closeCart(){document.getElementById("cartModal").style.display="none";}
+    function orderText(){
+      const items=products.filter(p=>cart[p.id]);
+      const name=document.getElementById("customerName").value.trim();
+      const address=document.getElementById("customerAddress").value.trim();
+      const lines=items.map(p=>`- ${p.name} x ${cart[p.id]} = ${money(p.price*cart[p.id])}`);
+      const total=items.reduce((sum,p)=>sum+p.price*cart[p.id],0);
+      return {items,name,address,total,message:`Hello ${SHOP_UPI_NAME}, I would like to order:\n${lines.join("\n")}\nSample total: ${money(total)}\nName: ${name||"Not provided"}\nDelivery address: ${address||"Will share on WhatsApp"}\nPlease confirm stock, delivery charges and final amount.`};
+    }
+    function validShopWhatsApp(){return /^\d{10,15}$/.test(SHOP_WHATSAPP)&&SHOP_WHATSAPP!=="919876543210";}
+    document.getElementById("openCart").addEventListener("click",openCart);
+    document.getElementById("closeCart").addEventListener("click",closeCart);
+    document.getElementById("cartModal").addEventListener("click",e=>{if(e.target.id==="cartModal")closeCart();});
+    document.getElementById("sendWhatsApp").addEventListener("click",()=>{
+      const o=orderText();if(!o.items.length){alert("Please add a saree to your bag first.");return;}
+      if(!validShopWhatsApp()){alert("Shop WhatsApp number is not configured yet. In index.html, replace SHOP_WHATSAPP with your number including country code (India: 91 + 10-digit number).");return;}
+      window.open(`https://wa.me/${SHOP_WHATSAPP}?text=${encodeURIComponent(o.message)}`,"_blank","noopener");
+    });
+    document.getElementById("payUpi").addEventListener("click",()=>{
+      const o=orderText();if(!o.items.length){alert("Please add a saree to your bag first.");return;}
+      if(SHOP_UPI_ID==="yourshop@upi"||!SHOP_UPI_ID.includes("@")){alert("UPI ID is not configured. Replace SHOP_UPI_ID in index.html with your verified merchant UPI ID.");return;}
+      const params=new URLSearchParams({pa:SHOP_UPI_ID,pn:SHOP_UPI_NAME,am:o.total.toFixed(2),cu:"INR",tn:"Saree order"});
+      window.location.href="upi://pay?"+params.toString();
+    });
+    document.getElementById("contactWhatsApp").addEventListener("click",e=>{
+      if(!validShopWhatsApp()){e.preventDefault();alert("Please configure SHOP_WHATSAPP in index.html before publishing.");}
+      else e.currentTarget.href=`https://wa.me/${SHOP_WHATSAPP}?text=${encodeURIComponent("Hello Shri Saari Collection, I would like to know more about your sarees.")}`;
+    });
+    document.getElementById("year").textContent=new Date().getFullYear();
+    renderProducts();updateCart();
+  </script>
+</body>
+</html>
